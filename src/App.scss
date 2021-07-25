@@ -1,0 +1,14 @@
+@import "./defaultSettings", "./variables";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $bodyBGC;
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,166 @@
+.mob_nav {
+  min-height: 3rem;
+  max-height: 3rem;
+  width: 100%;
+  min-width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mob_nav .logo {
+  color: white;
+  position: relative;
+  left: 5vw;
+  font-size: 1.5rem;
+}
+
+.mob_nav .slider {
+  color: white;
+  min-height: 30rem;
+  max-height: 30rem;
+  width: 60vw;
+  min-width: 15rem;
+  border-radius: 0 0 0 3vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  transition: 0.5s ease;
+}
+
+.mob_nav .slider .burger {
+  min-height: 3rem;
+  max-height: 3rem;
+  max-width: 1.8rem;
+  min-width: 1.8rem;
+  position: absolute;
+  right: 7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mob_nav .slider .burger div {
+  width: 100%;
+  min-height: 0.15rem;
+  max-height: 0.15rem;
+  background-color: white;
+  transform-origin: center;
+  transition: 0.5s ease;
+}
+
+.mob_nav .slider .burger .line2 {
+  width: 65%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.mob_nav .slider .user {
+  min-height: 3rem;
+  max-height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.mob_nav .slider .user img {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.mob_nav .slider .user h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.mob_nav .slider .links {
+  width: 100%;
+  min-height: 15rem;
+  max-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mob_nav .slider .links li {
+  list-style: none;
+}
+
+.mob_nav .slider .social {
+  text-align: center;
+}
+
+.mob_nav .social section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mob_nav .social section div {
+  height: 0.1rem;
+  background-color: white;
+  width: 100%;
+  margin: 0 1vw 0 1vw;
+}
+
+.mob_nav .social section h3 {
+  font-size: 1rem;
+  width: 30vw;
+}
+
+.mob_nav .social img {
+  margin: 2vh;
+  width: 3rem;
+}
+
+@media screen and (min-width: 575px) {
+  .desk_nav {
+    max-height: 3rem;
+    min-height: 3rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 2rem;
+  }
+
+  .desk_nav .logo {
+    position: relative;
+    color: aqua;
+    left: 5rem;
+  }
+
+  .desk_nav .links {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .desk_nav .links li {
+    position: relative;
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 0 2vw 0 2vw;
+  }
+
+  .desk_nav .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 5rem;
+  }
+
+  .desk_nav .user img {
+    margin: 0 0.5vw 0 0;
+  }
+
+  .desk_nav .user h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+}

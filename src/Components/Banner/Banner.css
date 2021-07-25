@@ -1,0 +1,256 @@
+.mob_main {
+  overflow: hidden;
+  width: 100%;
+  min-height: 80vmin;
+  min-height: 80vmax;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  transition: background-image 2s ease;
+}
+
+.mob_main::before {
+  content: "";
+  position: absolute;
+  min-height: 80vmin;
+  min-height: 80vmax;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4));
+}
+
+.mob_main h1 {
+  min-width: 15rem;
+  max-width: 60vw;
+  min-height: 2rem;
+  max-height: 2rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 15vmax 0 0.5rem 2rem;
+  position: relative;
+}
+
+.mob_main h1 div {
+  height: 0.1vh;
+  width: 4rem;
+  margin: 0 0.5rem 0 0;
+  background-color: orange;
+}
+
+.mob_main h2 {
+  font-size: 1.5rem;
+  max-width: 85vw;
+  min-width: 18rem;
+  margin: 0 0 0.5rem 2rem;
+  position: relative;
+}
+
+.mob_main a {
+  max-width: 8rem;
+  min-width: 7rem;
+  font-size: 1.1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  transition-timing-function: step-end;
+  margin: 0 0 0.5rem 2rem;
+  position: relative;
+}
+
+.mob_main a img {
+  animation-name: down;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes down {
+  0% {
+    transform: scale(0.8) translateY(0);
+  }
+  50% {
+    transform: scale(0.8) translateY(1.2vh);
+  }
+  100% {
+    transform: scale(0.8) translateY(0vh);
+  }
+}
+
+.mob_main section {
+  height: 1rem;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  top: 75vmax;
+  transform: translateX(-50%);
+}
+
+.mob_main section div {
+  height: 0.1rem;
+  background-color: white;
+  width: 7%;
+  transition: background-color 1s ease;
+}
+
+@media screen and (min-width: 575px) {
+  .desk_main {
+    overflow: hidden;
+    height: 65rem;
+    background-image: url("../../Asset/HG.png"), url("../../Asset/VG.png"),
+      url("../../Asset/MG.png");
+    background-position: top, bottom, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 40%, 100% 51%, 100% 77%;
+    background-attachment: fixed, fixed, fixed;
+    background-blend-mode: normal, normal, overlay;
+    color: white;
+  }
+
+  .desk_main:before {
+    content: "";
+    height: 65rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+  }
+
+  .desk_banner {
+    max-height: 40rem;
+    min-height: 40rem;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  .desk_banner .desk_social {
+    min-width: 12rem;
+    max-width: 12rem;
+    min-height: 2rem;
+    max-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: rotate(90deg);
+  }
+
+  .desk_banner .desk_social h3 {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin: 0 1vh 0 1vh;
+  }
+
+  .desk_banner .desk_social img {
+    margin: 0 0.5vh 0 0.5vh;
+  }
+
+  .desk_banner .banner_body {
+    min-width: 20rem;
+    max-width: 70rem;
+    margin: 0 4rem 0 0;
+    position: relative;
+  }
+
+  .desk_banner .banner_body section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .desk_banner .banner_body section div {
+    background-color: orange;
+    width: 5vw;
+    height: 0.1vh;
+  }
+
+  .desk_banner .banner_body section h3 {
+    font-size: 1.4rem;
+    margin: 0 0.5rem 0 0.5rem;
+  }
+
+  .desk_banner .banner_body h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5vh;
+  }
+
+  .desk_banner .banner_body a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    min-width: 8rem;
+    max-width: 8rem;
+  }
+
+  .desk_banner .banner_body a img {
+    animation-name: down;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+
+  @keyframes down {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(1.2vh);
+    }
+    100% {
+      transform: translateY(0vh);
+    }
+  }
+
+  .desk_banner .desk_slide {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 3.5rem;
+  }
+
+  .desk_banner .desk_slide .tags {
+    min-height: 22rem;
+    max-height: 22rem;
+    min-width: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    max-width: 3rem;
+  }
+
+  .desk_banner .desk_slide .tags p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
+
+  .desk_banner .desk_slide .slide {
+    min-width: 3rem;
+    max-width: 3rem;
+    min-height: 22rem;
+    max-height: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .desk_banner .desk_slide .slide div {
+    background-color: white;
+    margin: 0.5rem 0 0.55rem 0;
+    height: 0.2vmax;
+    transform: rotate(90deg);
+    width: 100%;
+  }
+}
