@@ -12,6 +12,23 @@ import instagram from "../../Asset/svg/instagram.svg";
 function Navbar() {
   const [isopen, setisopen] = useState(false);
 
+  // useEffect(() => {
+  //   const closeslide = () => {
+  //     if (isopen) {
+  //       setisopen(!isopen);
+  //     }
+  //   };
+
+  //   if (window.innnerWidth <= 638) {
+  //     var event = window.addEventListener("click", closeslide);
+  //   }
+  //   return () => {
+  //     if (event) {
+  //       window.removeEventListener("click", closeslide);
+  //     }
+  //   };
+  // }, [isopen]);
+
   if (window.innerWidth > 638) {
     return (
       <nav id="desk_nav" className="desk_nav">

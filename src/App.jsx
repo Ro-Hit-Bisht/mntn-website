@@ -75,14 +75,6 @@ function App() {
     };
   }, [BigScreen]);
 
-  // useEffect(() => {
-  //   window.addEventListener("resize", checkSize);
-  //   return () => {
-  //     window.removeEventListener("resize", checkSize);
-  //     console.log("bye");
-  //   };
-  // }, [BigScreen]);
-
   if (window.innerWidth > 638) {
     return (
       <>
@@ -99,8 +91,6 @@ function App() {
         <Navbar />
         <Banner />
         {Article_infos}
-        <br />
-        <br />
         <Footer />
       </>
     );

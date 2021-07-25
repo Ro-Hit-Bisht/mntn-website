@@ -12,7 +12,7 @@ import downarrow from "../../Asset/svg/arrow_downward_24px.svg";
 import instagram from "../../Asset/svg/instagram.svg";
 import twitter from "../../Asset/svg/twitter.svg";
 
-import img1 from "../../Asset/image/banner/1.jpg";
+import img1 from "../../Asset/image/banner/10.jpg";
 import img2 from "../../Asset/image/banner/2.jpg";
 import img3 from "../../Asset/image/banner/3.jpg";
 import img4 from "../../Asset/image/banner/4.jpg";
@@ -21,21 +21,33 @@ import img5 from "../../Asset/image/banner/5.jpg";
 function Banner() {
   const [state, setstate] = useState(1);
 
+  const tagline1 = `Be Prepared For The Mountains And Beyond!`;
+  const tagline2 = `The Mountains Are Waiting For You`;
+  const tagline3 = `So Pack Your Bags And Gear Up`;
+  const tagline4 = `To Conquer The Mountains`;
+  const tagline5 = `And Reach The Tippity Top Of The World`;
+
   useEffect(() => {
+    let Interval1;
     const loop = () => {
-      const Interval = setInterval(() => {
+      Interval1 = setInterval(() => {
         setstate((prev) => prev + 1);
       }, 5000);
       setTimeout(() => {
-        clearInterval(Interval);
+        clearInterval(Interval1);
       }, 20000);
     };
 
     loop();
-    setInterval(() => {
+    const Interval2 = setInterval(() => {
       setstate(1);
       loop();
     }, 25000);
+
+    return () => {
+      clearInterval(Interval1);
+      clearInterval(Interval2);
+    };
   }, []);
 
   if (window.innerWidth > 638) {
@@ -53,7 +65,19 @@ function Banner() {
               <div></div>
               <h3>A Hiking Guide</h3>
             </section>
-            <h1>Be Prepared For The Mountains And Beyond!</h1>
+            <h1>
+              {state === 1
+                ? tagline1
+                : state === 2
+                ? tagline2
+                : state === 3
+                ? tagline3
+                : state === 4
+                ? tagline4
+                : state === 5
+                ? tagline5
+                : ""}
+            </h1>
             <a href="#article">
               scroll down <img src={downarrow} alt="downarrow" />
             </a>
@@ -67,11 +91,46 @@ function Banner() {
               <p>04</p>
             </div>
             <div className="slide">
-              <div id="slide1"></div>
-              <div id="slide2"></div>
-              <div id="slide3"></div>
-              <div id="slide4"></div>
-              <div id="slide5"></div>
+              <div
+                id="slide1"
+                style={
+                  state === 1
+                    ? { backgroundColor: "aqua" }
+                    : { backgroundColor: "white" }
+                }
+              ></div>
+              <div
+                id="slide2"
+                style={
+                  state === 2
+                    ? { backgroundColor: "aqua" }
+                    : { backgroundColor: "white" }
+                }
+              ></div>
+              <div
+                id="slide3"
+                style={
+                  state === 3
+                    ? { backgroundColor: "aqua" }
+                    : { backgroundColor: "white" }
+                }
+              ></div>
+              <div
+                id="slide4"
+                style={
+                  state === 4
+                    ? { backgroundColor: "aqua" }
+                    : { backgroundColor: "white" }
+                }
+              ></div>
+              <div
+                id="slide5"
+                style={
+                  state === 5
+                    ? { backgroundColor: "aqua" }
+                    : { backgroundColor: "white" }
+                }
+              ></div>
             </div>
           </section>
         </section>
@@ -111,7 +170,7 @@ function Banner() {
           <div
             style={
               state === 1
-                ? { backgroundColor: "orange" }
+                ? { backgroundColor: "aqua" }
                 : { backgroundColor: "white" }
             }
             id="slide1"
@@ -119,7 +178,7 @@ function Banner() {
           <div
             style={
               state === 2
-                ? { backgroundColor: "orange" }
+                ? { backgroundColor: "aqua" }
                 : { backgroundColor: "white" }
             }
             id="slide2"
@@ -127,7 +186,7 @@ function Banner() {
           <div
             style={
               state === 3
-                ? { backgroundColor: "orange" }
+                ? { backgroundColor: "aqua" }
                 : { backgroundColor: "white" }
             }
             id="slide3"
@@ -135,7 +194,7 @@ function Banner() {
           <div
             style={
               state === 4
-                ? { backgroundColor: "orange" }
+                ? { backgroundColor: "aqua" }
                 : { backgroundColor: "white" }
             }
             id="slide4"
@@ -143,7 +202,7 @@ function Banner() {
           <div
             style={
               state === 5
-                ? { backgroundColor: "orange" }
+                ? { backgroundColor: "aqua" }
                 : { backgroundColor: "white" }
             }
             id="slide5"

@@ -4,8 +4,7 @@
   min-height: 80vmin;
   min-height: 80vmax;
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-attachment: fixed;
   color: white;
   transition: background-image 2s ease;
@@ -36,7 +35,7 @@
   height: 0.1vh;
   width: 4rem;
   margin: 0 0.5rem 0 0;
-  background-color: orange;
+  background-color: aqua;
 }
 
 .mob_main h2 {
@@ -127,13 +126,13 @@
     max-height: 40rem;
     min-height: 40rem;
     display: flex;
-    align-items:center;
-    justify-content:space-between;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .desk_banner .desk_social {
-    min-width: 12rem;
-    max-width: 12rem;
+    min-width: 15rem;
+    max-width: 15rem;
     min-height: 2rem;
     max-height: 2rem;
     display: flex;
@@ -166,7 +165,7 @@
   }
 
   .desk_banner .banner_body section div {
-    background-color: orange;
+    background-color: aqua;
     width: 5vw;
     height: 0.1vh;
   }
@@ -179,17 +178,36 @@
   .desk_banner .banner_body h1 {
     font-size: 4rem;
     margin-bottom: 0.5vh;
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 
   .desk_banner .banner_body a {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     text-decoration: none;
     color: white;
     font-size: 1.3rem;
-    min-width: 8rem;
-    max-width: 8rem;
+    min-width: 10rem;
+    max-width: 10rem;
   }
 
   .desk_banner .banner_body a img {
@@ -252,5 +270,6 @@
     height: 0.2vmax;
     transform: rotate(90deg);
     width: 100%;
+    transition: background-color 1s ease;
   }
 }

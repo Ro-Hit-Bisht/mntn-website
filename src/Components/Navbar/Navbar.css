@@ -9,7 +9,7 @@
 }
 
 .mob_nav .logo {
-  color: white;
+  color: aqua;
   position: relative;
   left: 5vw;
   font-size: 1.5rem;
@@ -46,7 +46,7 @@
   width: 100%;
   min-height: 0.15rem;
   max-height: 0.15rem;
-  background-color: white;
+  background-color: aqua;
   transform-origin: center;
   transition: 0.5s ease;
 }

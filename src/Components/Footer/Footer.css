@@ -3,12 +3,12 @@
   color: white;
   position: relative;
   z-index: 1;
-  padding-top: 1rem;
+  padding-top: 3rem;
   background-color: #06161f;
 }
 
 .mob_footer .section h2 {
-  color: orange;
+  color: aqua;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +21,7 @@
   background-color: #06161f;
   width: 0.7rem;
   height: 0.7rem;
-  border-color: orange;
+  border-color: aqua;
   border-width: 0 0.2rem 0.2rem 0;
   transition: transform 1s ease;
 }
@@ -30,7 +30,7 @@ hr {
   margin: 0.3rem 0 0.3rem 1rem;
   width: 96vw;
   border-width: 1px 0 0 0;
-  border-top: solid orange;
+  border-top: solid aqua;
 }
 
 .mob_footer .section ul {
@@ -46,7 +46,7 @@ hr {
 }
 
 .mob_footer .third h1 {
-  color: orange;
+  color: aqua;
   width: 97vw;
   margin-left: 1rem;
 }
@@ -77,7 +77,7 @@ hr {
   }
 
   .desk_footer .first h1 {
-    color: orange;
+    color: aqua;
     margin: 4rem 0 1rem 5vw;
   }
 
@@ -107,7 +107,7 @@ hr {
   .desk_footer .second h2,
   .desk_footer .third h2 {
     margin: 4rem 0 1rem 2vw;
-    color: orange;
+    color: aqua;
   }
 
   .desk_footer .second ul,

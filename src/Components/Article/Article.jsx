@@ -58,23 +58,30 @@ function Articles(props) {
     return (
       <section id="desk_article" className="desk_article">
         <article id="article">
-          <figure
+          <div
             className="desk_figure"
             ref={slideImgRef}
             style={
               even
-                ? { transform: "translateX(40vw)", opacity: "0" }
+                ? {
+                    left: "1vw",
+                    justifyContent: "flex-start",
+                    transform: "translateX(40vw)",
+                    opacity: "0",
+                  }
                 : {
+                    left: "49%",
+                    justifyContent: "flex-end",
                     transform: "translateX(-40vw)",
                     opacity: "0",
                   }
             }
           >
             <img src={img} alt="" />
-          </figure>
-          <main style={even ? {} : {}}>
+          </div>
+          <main style={even ? { right: "-1vw" } : { right: "49%" }}>
+            <h2>{number}</h2>
             <section>
-              <h2>{number}</h2>
               <div></div>
               <h3>{tagline}</h3>
             </section>

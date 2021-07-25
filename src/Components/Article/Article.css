@@ -24,15 +24,15 @@
 .mob_article article section h1 {
   position: absolute;
   transform: scale(9) translateY(-0.5rem);
-  opacity: 0.1;
-  color: orange;
+  opacity: 0.3;
+  color: aqua;
 }
 
 .mob_article article section div {
   position: absolute;
   height: 0.1rem;
   width: auto;
-  background-color: orange;
+  background-color: aqua;
 }
 
 .mob_article article section h2 {
@@ -58,7 +58,7 @@
 }
 
 .mob_article article h3 {
-  color: orange;
+  color: aqua;
   margin: 0.5rem 0 0.5rem 1rem;
   min-height: 1.5rem;
   max-height: 1.5rem;
@@ -72,7 +72,7 @@
 }
 
 .mob_article article a {
-  color: white;
+  color: aqua;
   text-decoration: none;
   margin: 0 0 0 1rem;
   display: flex;
@@ -86,83 +86,85 @@
 
 @media screen and (min-width: 575px) {
   .desk_article {
+    width: 100%;
     min-width: 100%;
-    color: white;
-    padding-top: 10vmax;
     min-height: 40rem;
     max-height: 40rem;
-    margin-bottom: 3vmax;
+    color: white;
+    margin-top: 5rem;
   }
 
   .desk_article article {
-    max-width: 60vw;
-    min-width: 60vmax;
+    max-height: 40rem;
+    min-height: 40rem;
+    max-width: 80rem;
+    min-width: 10rem;
     margin: auto;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .desk_article article figure {
-    min-width: 20rem;
-    max-width: 20rem;
-    margin: 0 1vw 0 1vw;
+  .desk_article article div {
+    width: 50%;
+    min-width: 50%;
+    height: 30rem;
     position: relative;
     transition: all 1.5s cubic-bezier(0.61, -0.5, 0.42, 1.74);
+    display: flex;
   }
 
-  .desk_article article figure img {
-    width: 100%;
-    height: 100%;
-    border-radius: 2rem;
+  .desk_article article div img {
+    min-width: 20rem;
+    max-width: 20rem;
+    height: 30rem;
+    border-radius: 1.5rem;
   }
 
   .desk_article article main {
+    max-height: 25rem;
+    min-height: 25rem;
+    width: 50%;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    min-width: 20rem;
-    max-width: 35rem;
-    min-height: 100%;
-    margin: 0 1vw 0 1vw;
+  }
+
+  .desk_article article main h2 {
+    color: aqua;
+    opacity: 0.3;
+    font-size: 15vw;
   }
 
   .desk_article article main section {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
-  }
-
-  .desk_article article main section h2 {
-    color: orange;
-    position: absolute;
-    font-size: 20vw;
-    opacity: 0.1;
+    margin-bottom: 0.5rem;
   }
 
   .desk_article article main section div {
-    background-color: orange;
-    width: 7vw;
-    min-width: 6vw;
-    margin-left: 1vw;
-    height: 0.2vmin;
+    background-color: aqua;
+    width: 10vw;
+    height: 0.15rem;
+    margin-right: 0.5rem;
   }
 
   .desk_article article main section h3 {
     font-size: 1.3rem;
-    margin: 0 0.5rem 0 0.5rem;
-    color: orange;
+    color: aqua;
   }
 
   .desk_article article main h1 {
     font-size: 2.5rem;
-    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .desk_article article main p {
     font-size: 1.2rem;
-    margin-top: 1rem;
-    line-height: 2rem;
-    padding: 0 0.5rem 0 0.5rem;
+    padding: 0 0.5rem 0 0;
+    line-height: 1.5rem;
   }
 
   .desk_article article main a {
@@ -170,8 +172,7 @@
     align-items: center;
     font-size: 1.2rem;
     text-decoration: none;
-    color: orange;
-    padding-left: 0.5rem;
+    color: aqua;
   }
 
   .desk_article article main a img {
