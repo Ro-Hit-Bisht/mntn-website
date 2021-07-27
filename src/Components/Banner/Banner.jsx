@@ -12,7 +12,7 @@ import downarrow from "../../Asset/svg/arrow_downward_24px.svg";
 import instagram from "../../Asset/svg/instagram.svg";
 import twitter from "../../Asset/svg/twitter.svg";
 
-import img1 from "../../Asset/image/banner/10.jpg";
+import img1 from "../../Asset/image/banner/1.jpg";
 import img2 from "../../Asset/image/banner/2.jpg";
 import img3 from "../../Asset/image/banner/3.jpg";
 import img4 from "../../Asset/image/banner/4.jpg";
