@@ -1,7 +1,7 @@
 .mob_main {
   overflow: hidden;
   width: 100%;
-  min-height: 80vmin;
+  height: 80vmax;
   min-height: 80vmax;
   background-position: center center;
   background-size: 110% 100%;
@@ -13,7 +13,7 @@
 .mob_main::before {
   content: "";
   position: absolute;
-  min-height: 80vmin;
+  height: 80vmax;
   min-height: 80vmax;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4));
