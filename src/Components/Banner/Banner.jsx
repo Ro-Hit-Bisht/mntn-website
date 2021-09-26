@@ -12,13 +12,7 @@ import downarrow from "../../Asset/svg/arrow_downward_24px.svg";
 import instagram from "../../Asset/svg/instagram.svg";
 import twitter from "../../Asset/svg/twitter.svg";
 
-import img1 from "../../Asset/image/banner/1.jpg";
-import img2 from "../../Asset/image/banner/2.jpg";
-import img3 from "../../Asset/image/banner/3.jpg";
-import img4 from "../../Asset/image/banner/4.jpg";
-import img5 from "../../Asset/image/banner/5.jpg";
-
-function Banner() {
+function Banner(props) {
   const [state, setstate] = useState(1);
 
   const tagline1 = `Be Prepared For The Mountains And Beyond!`;
@@ -142,16 +136,16 @@ function Banner() {
         style={
           state === 1
             ? {
-                backgroundImage: `url(${img1})`,
+                backgroundImage: `url(${props.pic1})`,
               }
             : state === 2
-            ? { backgroundImage: `url(${img2})` }
+            ? { backgroundImage: `url(${props.pic2})` }
             : state === 3
-            ? { backgroundImage: `url(${img3})` }
+            ? { backgroundImage: `url(${props.pic3})` }
             : state === 4
-            ? { backgroundImage: `url(${img4})` }
+            ? { backgroundImage: `url(${props.pic4})` }
             : state === 5
-            ? { backgroundImage: `url(${img5})` }
+            ? { backgroundImage: `url(${props.pic5})` }
             : {}
         }
         id="mob_main"

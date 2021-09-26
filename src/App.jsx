@@ -12,6 +12,12 @@ import img1 from "./Asset/image/01.jpg";
 import img2 from "./Asset/image/02.jpg";
 import img3 from "./Asset/image/03.jpg";
 
+import bannerImg1 from "./Asset/image/banner/1.jpg";
+import bannerImg2 from "./Asset/image/banner/2.jpg";
+import bannerImg3 from "./Asset/image/banner/3.jpg";
+import bannerImg4 from "./Asset/image/banner/4.jpg";
+import bannerImg5 from "./Asset/image/banner/5.jpg";
+
 // Style sheet
 import "./App.css";
 
@@ -89,7 +95,13 @@ function App() {
     return (
       <>
         <Navbar />
-        <Banner />
+        <Banner
+          pic1={bannerImg1}
+          pic2={bannerImg2}
+          pic3={bannerImg3}
+          pic4={bannerImg4}
+          pic5={bannerImg5}
+        />
         {Article_infos}
         <Footer />
       </>
